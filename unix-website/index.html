@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <h4>Talia Muro (2050123)</h4>
+        <h4>Selihom Efrem Ogbe (2057195)</h4>
+        <h4>Mariam Salim (6229528)</h4>
+        <div id="title">
+            <h1>Hosting a Secure Web Application Server</h1>
+            <h2>Unix Final Project</h2>
+        </div>
+    
+    <div class="main-container">
+      <button class="fire-btn">Click Me!</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+    
+    <script>
+        const btn = document.querySelector(".fire-btn");
+        btn.addEventListener("click", () => {
+            const defaults = {
+                spread: 360,
+                ticks: 100,
+                gravity: 0,
+                decay: 0.94,
+                startVelocity: 30,
+                shapes: ["heart"],
+                colors: ["FFC0CB", "FF69B4", "FF1493", "C71585"],
+            };
+
+            confetti({
+            ...defaults,
+            particleCount: 50,
+            scalar: 2,
+            });
+
+            confetti({
+            ...defaults,
+            particleCount: 25,
+            scalar: 3,
+            });
+
+            confetti({
+            ...defaults,
+            particleCount: 10,
+            scalar: 4,
+            });
+        });
+    </script>
+  </body>
+</html>
