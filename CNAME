@@ -1,1 +1,5 @@
-www.markololo.lol
+
+Type: CNAME
+Host: www
+Answer: seli-hom.github.io
+TTL: 300
