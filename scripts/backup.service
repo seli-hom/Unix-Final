@@ -1,0 +1,7 @@
+# GNU nano 7.2      /etc/systemd/system/backup.service               
+[Unit]
+Description=Run server backup script
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/server_backup.sh

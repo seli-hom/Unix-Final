@@ -1,0 +1,10 @@
+# GNU nano 7.2       /etc/systemd/system/backup.timer                
+[Unit]
+Description=Weekly server backup
+
+[Timer]
+OnCalendar=Fri 22:00:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target
