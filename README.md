@@ -3,13 +3,15 @@
 This project sets up a GNU/Linux (Debian-based) Virtual Private Server (VPS) hosting a static website.   
 It has basic security implemented, reliability and regular maintenance.
 It is configured to update automatically when the source code of the website is changed (there is regular verification to see if there are updates from GitHub).   
+To access the website, go online to markololo.lol     
     
 ## Technology
 - Operating System: Debian GNU/Linux 
-- Web Server: Nginx 
-- Deployment Method: Scheduled Git pull via Cron job 
+- Web Server: Nginx
+- Deployment Method: Scheduled Git pull via Cron job
+- Backup: systemd timer for automatic backups every Friday at 10pm
 - Version Control: GitHub
-- Security: UFW
+- Security: UFW firewall
     
 ## Key Features 
 - Automated deployment and update using cron jobs 
